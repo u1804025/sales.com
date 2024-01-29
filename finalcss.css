@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+body{
+    font-family:sans-serif;
+}
+h1{
+    font-size:2.5rem;
+    font-weight:700;
+}
+h2{
+    font-size:1.8rem;
+    font-weight:600;
+}
+h3{
+    font-size:1.4rem;
+    font-weight:800;
+}
+h4{
+    font-size:1.1rem;
+    font-weight:600;
+}
+h5{
+    font-size:1rem;
+    font-weight:400;
+    color: #1d1d1d;
+}
+h6{
+    color:#D8D8D8;
+}
+button {
+    font-size:0.8rem;
+    font-weight:700;
+    outline:none;
+    border:5px solid red;
+    background-color:black;
+    color:yellowgreen;
+    padding:13px 30px;
+    cursor:pointer;
+    text-transform:uppercase ;
+    
+}
+/**for hover effect in button**/
+button:hover {
+    background-color:brown;
+}
+/**for hover effect in sales**/
+/*.navbar .log {
+   background-color:
+}*/
+/**for hover effect in navbar and color changed after click on navbar**/
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-i:hover,
+.navbar-light .navbar-nav .nav-link:active,
+.navbar i.active{
+    color:coral;
+}
+/**for font size in navbar**/
+.navbar{
+    font-size:19px;
+}
+/* for padding and color of navbar*/
+.navbar-light .navbar-nav .nav-link{
+    padding:0 20px;
+    color:black;
+    transition:0.3s ease;
+}
+
+.navbar i{
+    font-size:1.2rem;
+    padding:0 7px;
+    cursor:pointer;
+    font-weight:500;
+    transition:0.3s ease;
+}
+img{
+    width:30px;
+    height:60px;
+}
+/*for backgroun image*/
+#home{
+    background-image:url("pic1.jpg");
+    width:100%;
+    height:600px;;
+    background-size:cover;
+    background-position:top center; 
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+    
+}
+#home span{
+   color:green; 
+}
+.d1{
+    color:red;
+}
+.imgs
+{
+
+    height: 200px;
+    width: 240px;
+    
+}
+
+.one
+{
+    padding-top: 10px;
+    padding-left: 30px;
+padding-right: 10px;
+
+
+}
+

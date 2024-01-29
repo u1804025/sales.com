@@ -1,0 +1,31 @@
+.prod-row{
+    display: flex;
+    
+}
+.products{
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+.products img{
+    transition: .3s all;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    object-fit:cover;
+}
+.products:hover img{
+   opacity: .7;
+}
+.products .prod-btn{
+    background: #fb774b;
+    transform: translateY(20px);
+    opacity: 0;
+    margin: none;
+    border: none;
+    transition: .3s all;
+}
+.products:hover .prod-btn{
+    
+    opacity: 1;
+}
+   

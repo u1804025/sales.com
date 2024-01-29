@@ -1,0 +1,75 @@
+body{
+    background-image:url("https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80");
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    
+    }
+    .signinbox{
+    width: 400px;
+    height: 300px;
+    margin: auto ;
+    background-color:whitesmoke;
+    border-radius: 5px;
+    }
+    h1{
+    text-align: center;
+    padding-top: 20px;
+    }
+    h4{
+    
+    text-align: center;
+    }
+    form{
+        width: 370px;
+        padding-left: 10px;
+    }
+    form label{
+        display:flex;
+        font-size: 15px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    form input{
+    width: 100%;
+    padding: 7px;
+    
+    border: 1px solid black;
+    border-radius: 3px;
+    }
+    form input[type="button"]
+    {
+        width: 385px;
+        height: 35px;
+        padding: 5px 10px;
+        margin-top: 20px;
+        font-size: 20px;
+        background-color: black;
+        color: aliceblue;
+    }
+    form input[type="button"]:hover{
+        background-color: aqua;
+        color: black;
+    }
+    p{
+    text-align: center;
+    margin-top: 10px;
+    }
+    .out{
+        text-align: center;
+        color: gold;
+        margin-top: 10px;
+    
+    
+    }
+    .out a
+    {
+    color: black;
+    
+    }
+    .errormsg{
+        margin: 10px 0;
+        display: block;
+        background: crimson;
+        color: #fff;
+        border-radius: 5px;
+        font-size: 15px;
+    }
