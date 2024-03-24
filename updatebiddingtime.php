@@ -37,7 +37,7 @@ mysqli_select_db($link,"salescom");
                 
                 <tr style="padding: 10px ;">
                     
-                    <td colspan="2" ><input type="submit"name="submit1"value="Upload"></td>
+                    <td colspan="2" ><input type="submit"name="submit1"value="Update"></td>
                 </tr>
                 
             </table>
@@ -45,25 +45,13 @@ mysqli_select_db($link,"salescom");
         </form>
         <?php
         if(isset($_POST["submit1"])){
-            $v1=rand(1111,999);
-            $v2=rand(1111,999);
-            $v3=$v1.$v2;
-            $v3=md5($v3);
-            $fnm=$_FILES["pimage"]["name"];
-            $dst="./productimage/".$v3.$fnm;
-            $dst1="productimage/".$v3.$fnm;
-            move_uploaded_file($_FILES["pimage"]["tmp_name"],$dst);
-            $pnm = filter_input(INPUT_POST, 'pnm'); 
-            $pprice = filter_input(INPUT_POST, 'pprice');
-            $pimage = filter_input(INPUT_POST, 'dst1');
-            $pcategory = filter_input(INPUT_POST, 'pcategory');
-            $pdesc = filter_input(INPUT_POST, 'pdesc');
+           
             $bst=filter_input(INPUT_POST, 'bst');
             $bet=filter_input(INPUT_POST, 'bet');
             date_default_timezone_set('Asia/Dhaka');
-            mysqli_query($link,"INSERT INTO productnew values('$email','','$pnm','$pprice','$dst1','$pcategory','$pdesc','$bst','$bet')");
+            mysqli_query($link,"INSERT INTO productnew values('$bst','$bet')");
             header('location:product.php');
-            mysqli_query($link,"INSERT INTO bidding values('','','0','$pprice','$pprice','$bst','$bet')");
+            mysqli_query($link,"INSERT INTO bidding values('$bst','$bet')");
             header('location:product.php');
         }
         ?>
